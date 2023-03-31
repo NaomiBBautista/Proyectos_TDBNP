@@ -1,0 +1,183 @@
+body 
+{
+    animation: colores 10s infinite;
+}
+
+@keyframes colores 
+{
+    0% {
+        background-color: #CAE8D5;
+    }
+
+    25% {
+        background-color: #84A9AC;
+    }
+
+    50% {
+        background-color: #3B6978;
+    }
+
+    100% {
+        background-color: #204051;
+    }
+
+}
+
+
+h1 
+{
+    text-align: center;
+    padding-top: 250px;
+    font-family: 'Lobster Two', cursive;
+    font-size: 100px;
+}
+
+
+.cuadroBlanco 
+{
+    background-color: #ffff;
+    position: absolute;
+    animation: mueveCuadro 5s infinite;
+}
+
+#cuadroBlanco1 
+{
+    width: 100px;
+    height: 100px;
+    left: 50px;
+}
+
+#cuadroBlanco2 
+{
+    width: 100px;
+    height: 100px;
+    left: 200px;
+}
+
+@keyframes mueveCuadro 
+{
+    from {
+        top: 0px;
+    }
+
+    to {
+        top: 200px;
+    }
+
+}
+
+#cuadroAzul 
+{
+    width: 100px;
+    height: 100px;
+    background-color: #150050;
+    position: absolute;
+    left: 350px;
+    animation: mueveRojo 3s infinite;
+}
+
+@keyframes mueveRojo 
+{
+    0% {
+        top: 0px;
+    }
+
+    25% {
+        top: 400px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    100% {
+        top: 150px;
+    }
+
+}
+
+#cuadroMulticolor 
+{
+    width: 100px;
+    height: 100px;
+    background-color: #363062;
+    position: absolute;
+    left: 450px;
+    animation: moverMulticolor 3s infinite;
+}
+
+@keyframes moverMulticolor 
+{
+    0% {
+        top: 0px;
+        left: 500px;
+        background-color: #363062;
+    }
+
+    25% {
+        top: 0px;
+        left: 600px;
+        background-color: #84A9AC;
+    }
+
+    50% {
+        top: 0px;
+        left: 500px;
+        background-color: #460C68;
+    }
+
+    100% {
+        top: 0px;
+        left: 500px;
+        background-color: #332FD0;
+    }
+}
+
+#circulo 
+{
+
+    width: 100px;
+    height: 100px;
+    background-color: #F0FF42;
+    position: absolute;
+    left: 800px;
+    border-radius: 50%;
+    animation: crecer 3s infinite;
+}
+
+@keyframes crecer 
+{
+    0% {
+        top: 0px;
+        width: 100px;
+        height: 100px;
+    }
+
+    100% {
+        top: 100px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.gradiante 
+{
+
+    width: 1500px;
+    height: 100px;
+    position: absolute;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    animation: mover 5s infinite;
+}
+
+@keyframes mover 
+{
+    0% {
+        top: 500px;
+    }
+
+    100% {
+        top: 650px;
+    }
+}
