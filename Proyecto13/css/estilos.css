@@ -1,0 +1,77 @@
+h1
+{
+    font-family: 'Lobster', cursive;
+    font-size: 300%; 
+}
+
+*
+{
+    box-sizing:  border-box;
+    /* Esta propiedad te permite incluir el padding 
+    y border en el ancho y alto del elemento.*/
+}
+
+body 
+{
+    margin: 0px;
+    font-family: Arial;
+}
+
+.header 
+{
+    text-align: center;
+    padding: 32px;
+}
+
+.row 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column 
+{
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.row2 
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 1px;
+}
+
+.column2 
+{
+    flex: 5%;
+    max-width: 5%;
+    padding: 0 2px;
+}
+
+.column img 
+{
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 25px;
+}
+
+@media (max-width: 800px) 
+{
+    .column 
+    {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 600px)
+{
+    .column 
+    {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
