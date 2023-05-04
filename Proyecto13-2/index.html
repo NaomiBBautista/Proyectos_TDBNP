@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transiciones</title>
+
+    <style>
+        .galeria
+        {
+            display: flex ;
+            height: 20rem;
+            gap: 1rem;
+
+        }
+
+        .galeria > div
+        {
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: auto 100%;
+            transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+        }
+
+        .galeria > div:hover
+        {
+            flex: 3;
+
+        }
+
+        .imagenes1
+        {
+            background-image: url(https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+        }
+
+        .imagenes2
+        {
+            background-image: url(https://images.unsplash.com/photo-1511497584788-876760111969?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Ym9zcXVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .imagenes3
+        {
+            background-image: url(https://images.unsplash.com/photo-1476231682828-37e571bc172f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGJvc3F1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .imagenes4
+        {
+            background-image: url(https://images.unsplash.com/photo-1473448912268-2022ce9509d8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8Ym9zcXVlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);
+        }
+
+        .imagenes5
+        {
+            background-image: url(https://images.unsplash.com/photo-1542273917363-3b1817f69a2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGJvc3F1ZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+        }
+
+        button 
+        {
+            background-color: #0A2647;
+            transition: background-color 1s;
+            color:white
+        }
+ 
+        button:hover 
+        {
+            background-color: #2C74B3;
+            color: white;
+        } 
+
+    </style>
+</head>
+
+
+<body>
+    <div class="galeria">
+        <div class="imagenes1"></div>
+        <div class="imagenes2"></div>
+        <div class="imagenes3"></div>
+        <div class="imagenes4"></div>
+        <div class="imagenes5"></div>
+    </div>
+
+    <button style = "padding: 20px;">Hola boton </button>
+    
+</body>
+</html>
